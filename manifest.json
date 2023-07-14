@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "MyAdBlock",
+  "version": "1.0.0",
+  "description": "Youtubeの広告飛ばせたら嬉しいよね",
+  "content_scripts": [{
+    "matches": ["https://*.youtube.com/*"],
+    "js": ["adblock.js"]
+  }],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{862d3853-0852-4139-9d29-0670022c1c64}",
+      "strict_min_version": "42.0"
+    }
+  }
+}
